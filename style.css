@@ -1,0 +1,149 @@
+body {
+  color: #494949;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: lighter;
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+
+.banner {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(https://rucbot.com/wp-content/uploads/2023/04/PORTADA-GRANDE.png);
+  background-size: cover;
+  background-position: 400px -150px;
+  color: white;
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  text-align: left; /* Centra el texto */
+}
+
+/* Ajusta el contenedor para que no afecte el ancho del banner */
+.banner .container {
+  width: 100%; /* Ocupa todo el ancho del banner */
+  padding: 0 10%; /* Padding a los lados para dejar espacio */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  position: relative; /* Asegura que el padding se mantenga dentro del contenedor */
+  text-align: left; /* Alineación por defecto */
+}
+
+.banner h1, .banner h2 {
+  width: 55%; /* Ocupa todo el ancho del contenedor */
+  margin: 0; /* Elimina el margen por defecto */
+}
+
+.banner-button {
+  display: inline-block;
+  padding: 6px 20px; /* Ajusta el padding según tus preferencias */
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold;
+  color: #fff; /* Color del texto */
+  background-color: #ff7800; /* Color de fondo del botón */
+  border: none; /* Sin borde */
+  border-radius: 25px; /* Bordes redondeados */
+  text-align: center; /* Centrar el texto dentro del botón */
+  text-decoration: none; /* Sin subrayado */
+  margin-top: 20px; /* Espacio superior entre el botón y el h2 */
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.banner-button:hover {
+  background-color: #ff961f; /* Color de fondo del botón al pasar el ratón */
+}
+
+.container {
+  width: 700px;
+  margin: 50px auto;
+}
+
+h2 {
+  color: #A0A0A0;
+  font-weight: normal;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.link-medium {
+  background-image: linear-gradient(to bottom, rgba(233, 253, 240, 1), rgba(233, 253, 240, 1));
+  color: #636363;
+  font-weight: lighter;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.link-medium:hover {
+  background-image: linear-gradient(to bottom, rgba(125, 255, 179, 1), rgba(125, 255, 179, 1));
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Media query para escritorio */
+@media(min-width: 1024px) {
+  .banner h1 {
+    font-size: 48px; /* Tamaño específico para el título en el banner */
+  }
+  .banner h2 {
+    font-size: 16px; /* Tamaño específico para el subtítulo en el banner */
+  }
+}
+
+/* Media query para tabletas */
+@media(min-width: 768px) and (max-width: 1023px) {
+  .banner h1 {
+    font-size: 32px; /* Tamaño específico para el título en el banner */
+  }
+  .banner h2 {
+    font-size: 12px; /* Tamaño específico para el subtítulo en el banner */
+  }
+  .banner .container {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+  }
+
+  .banner h1, .banner h2 {
+    width: 100%; /* Permite que el texto ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+  }
+
+  .banner-button {
+    margin: 20px auto; /* Centra el botón */
+  }
+}
+
+/* Media query para móviles */
+@media(max-width: 767px) {
+  .banner h1 {
+    font-size: 24px; /* Tamaño específico para el título en el banner */
+  }
+  .banner h2 {
+    font-size: 10px; /* Tamaño específico para el subtítulo en el banner */
+  }
+  .banner .container {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+  }
+
+  .banner h1, .banner h2 {
+    width: 100%; /* Permite que el texto ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+  }
+
+  .banner-button {
+    margin: 20px auto; /* Centra el botón */
+  }
+}
